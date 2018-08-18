@@ -1,15 +1,8 @@
 import React, { Component } from "react";
-import Layout from "../layouts";
-import { Link } from "gatsby";
 
 class Home extends Component {
   render() {
-    return (
-      <Layout>
-        <h1> Welcome to Karan </h1>
-        <Link to="/about">About</Link>
-      </Layout>
-    );
+    return <h1> Karan Kotwal - Software Developer, Entrepenuer, and Gamer </h1>;
   }
 }
 

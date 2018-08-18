@@ -8,6 +8,7 @@ import Button from "@material-ui/core/Button";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
+import Grid from "@material-ui/core/Grid";
 
 const drawerWidth = 240;
 
@@ -37,9 +38,11 @@ const styles = theme => ({
   toolbar: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "flex-end",
     padding: "0 8px",
     ...theme.mixins.toolbar
+  },
+  options: {
+    justifyContent: "flex-end"
   },
   title: {
     marginLeft: "8px"
@@ -51,14 +54,30 @@ class Navigation extends Component {
     const { classes, title } = this.props;
     return (
       <AppBar position="absolute" className={classes.appBar}>
-        <Toolbar disableGutters className={classes.title}>
-          <Typography variant="title" color="inherit" noWrap>
-            {title}
-          </Typography>
-          <Link to="/reports" style={{ color: "inherit" }}>
-            <Button color="inherit">Reports</Button>
-          </Link>
-        </Toolbar>
+        <Grid container>
+          <Grid item xs={2}>
+            <Toolbar disableGutters className={classes.title}>
+              <Typography variant="title" color="inherit" noWrap>
+                <Link to="/" style={{ color: "inherit" }}>
+                  {title}
+                </Link>
+              </Typography>
+            </Toolbar>
+          </Grid>
+          <Grid item xs={10}>
+            <Toolbar disableGutters className={classes.options}>
+              <Link to="/about" style={{ color: "inherit" }}>
+                <Button color="inherit">About</Button>
+              </Link>
+              <Link to="/blog" style={{ color: "inherit" }}>
+                <Button color="inherit">Blog</Button>
+              </Link>
+              <Link to="/resume" style={{ color: "inherit" }}>
+                <Button color="inherit">Resume</Button>
+              </Link>
+            </Toolbar>
+          </Grid>
+        </Grid>
       </AppBar>
     );
   }
