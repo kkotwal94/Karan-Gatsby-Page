@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import Helmet from "react-helmet";
+import { Content } from "../components/content";
 import { Navigation } from "../components/navigation";
 
 class MainLayout extends Component {
@@ -9,7 +10,7 @@ class MainLayout extends Component {
     return (
       <Fragment>
         <Navigation title="Karan Kotwal" />
-        {children}
+        <Content>{children}</Content>
       </Fragment>
     );
   }
