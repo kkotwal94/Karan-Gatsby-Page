@@ -1,14 +1,13 @@
 import React, { Component } from "react";
-import Layout from "../layouts";
-import { Link } from "gatsby";
+import { Hero } from "../components/hero";
+import FloatingImage from "../images/computer.jpg";
 
 class Home extends Component {
   render() {
     return (
-      <Layout>
-        <h1> Welcome to Karan </h1>
-        <Link to="/about">About</Link>
-      </Layout>
+      <Hero imageSrc={FloatingImage} parallaxOffset={100}>
+        <h1> Karan Kotwal - Software Developer, Entrepenuer, and Gamer </h1>
+      </Hero>
     );
   }
 }

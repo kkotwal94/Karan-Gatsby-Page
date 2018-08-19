@@ -10,6 +10,7 @@
   "dependencies": {
     "@material-ui/core": "^1.5.0",
     "gatsby": "^2.0.0-beta.111",
+    "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-netlify": "^1.0.21",
     "gatsby-plugin-page-creator": "^1.0.1",
     "gatsby-plugin-react-helmet": "^2.0.11",
@@ -25,8 +26,9 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
+    "react-lazy-hero": "^0.4.0",
     "react-router-dom": "^4.3.1",
-    "recompose": "^0.28.2",
+    "recompose": "^0.27.0",
     "turndown": "^4.0.2"
   }
 }
