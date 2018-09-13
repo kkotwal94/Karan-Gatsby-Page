@@ -13,20 +13,14 @@ const styles = theme => ({
   },
   content: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.default,
-    top: "64px"
+    backgroundColor: theme.palette.background.default
   }
 });
 
 class Content extends Component {
   render() {
     const { classes, children } = this.props;
-    return (
-      <main className={classes.content}>
-        <div className={classes.toolbar} />
-        {children}
-      </main>
-    );
+    return <main className={classes.content}>{children}</main>;
   }
 }
 

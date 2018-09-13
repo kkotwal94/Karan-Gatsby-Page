@@ -1,9 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Helmet from "react-helmet";
 import { Content } from "../components/content";
-import { Navigation } from "../components/navigation";
-import { Content } from "../components/content";
-import { withStyles } from "@material-ui/core/styles";
+import { Header, HeaderLinks } from "../Components/Header";
 import "../styles/main.css";
 
 class MainLayout extends Component {
@@ -11,7 +9,16 @@ class MainLayout extends Component {
     const { children } = this.props;
     return (
       <Fragment>
-        <Navigation title="Karan Kotwal" />
+        <Header
+          color={"transparent"}
+          brand="Karan Kotwal"
+          rightLinks={<HeaderLinks />}
+          fixed
+          changeColorOnScroll={{
+            height: 300,
+            color: "white"
+          }}
+        />
         <Content>{children}</Content>
       </Fragment>
     );

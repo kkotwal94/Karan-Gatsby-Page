@@ -8,8 +8,9 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "@material-ui/core": "^1.5.0",
-    "gatsby": "^2.0.0-beta.111",
+    "@material-ui/core": "^3.0.3",
+    "@material-ui/icons": "^3.0.1",
+    "gatsby": "next",
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-netlify": "^1.0.21",
     "gatsby-plugin-page-creator": "^1.0.1",

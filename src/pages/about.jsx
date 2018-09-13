@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class About extends Component {
   render() {
-    return <h1>This is the top page</h1>;
+    return <h1>This is the top ps</h1>;
   }
 }
 
