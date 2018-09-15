@@ -4,7 +4,7 @@ import LazyHero from "react-lazy-hero";
 
 class Hero extends Component {
   render() {
-    const { imageSrc, parallaxOffset, children } = this.props;
+    const { imageSrc, parallaxOffset, minHeight, children } = this.props;
     return (
       <LazyHero
         imageSrc={imageSrc}
@@ -12,7 +12,7 @@ class Hero extends Component {
         transitionDuration={600}
         opacity={0}
         transitionTimingFunction="ease-in-out"
-        minHeight={"100vh"}
+        minHeight={minHeight}
         isCentered
       >
         {children}
@@ -22,12 +22,14 @@ class Hero extends Component {
 }
 
 Hero.defaultProps = {
-  parallaxOffset: 0
+  parallaxOffset: 0,
+  minHeight: "100vh"
 };
 
 Hero.propTypes = {
   imageSrc: PropTypes.string.isRequired,
-  parallaxOffset: PropTypes.number
+  parallaxOffset: PropTypes.number,
+  minHeight: PropTypes.string
 };
 
 export default Hero;

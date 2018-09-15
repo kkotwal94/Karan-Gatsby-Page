@@ -10,7 +10,7 @@
   "dependencies": {
     "@material-ui/core": "^3.0.3",
     "@material-ui/icons": "^3.0.1",
-    "gatsby": "next",
+    "gatsby": "^2.0.0-rc.21",
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-netlify": "^1.0.21",
     "gatsby-plugin-page-creator": "^1.0.1",
