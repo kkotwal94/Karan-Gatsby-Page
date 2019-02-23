@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import Helmet from "react-helmet";
 import { Content } from "../components/content";
 import { Header, HeaderLinks } from "../components/Header";
 import "../styles/main.css";
