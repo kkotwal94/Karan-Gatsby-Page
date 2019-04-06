@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Content } from "../components/content";
-import { Header, HeaderLinks } from "../components/Header";
+import { Header, HeaderLinks } from "../components/header";
 import "../styles/main.css";
 
 class MainLayout extends Component {

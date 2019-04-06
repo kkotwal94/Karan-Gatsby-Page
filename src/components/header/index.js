@@ -1,4 +1,4 @@
-import Header from "./header";
-import HeaderLinks from "./headerLinks";
+import Header from "./Header";
+import HeaderLinks from "./HeaderLinks";
 
 export { Header, HeaderLinks };
