@@ -12,7 +12,21 @@ import CssLogo from "../images/css-logo.png";
 import ApolloLogo from "../images/apollo-logo.png";
 import WebpackLogo from "../images/webpack-logo.png";
 import ReduxLogo from "../images/redux-logo.png";
-
+import NodeJSLogo from "../images/nodejs-logo.png";
+import ElixirLogo from "../images/elixir-logo.png";
+import GraphQLLogo from "../images/graphql-logo.png";
+import CPlusPlusLogo from "../images/cplusplus-logo.png";
+import AWSLogo from "../images/aws-logo.png";
+import CircleCILogo from "../images/circleci-logo.png";
+import CypressLogo from "../images/cypress-logo.png";
+import DigitalOceanLogo from "../images/digitalocean-logo.png";
+import DockerLogo from "../images/docker-logo.png";
+import GCPLogo from "../images/gcp-logo.png";
+import JenkinsLogo from "../images/jenkins-logo.png";
+import KubernetesLogo from "../images/kubernetes-logo.svg";
+import MySQLLogo from "../images/sql-logo.png";
+import PostgreSQLLogo from "../images/postgresql-logo.png";
+import MongoDBLogo from "../images/mongodb-logo.jpg";
 const styles = {
   root: {
     color: "white",
@@ -139,12 +153,191 @@ const Backend = ({ classes }) => (
   <Grid container>
     <Grid item xs={12} className={classes.frontEndContainer}>
       <h3 className={classes.frontEnd}>Back End technologies</h3>
-      <Grid container spacing={32} />
+      <Grid container spacing={32}>
+        <Grid item xs={12} md={6} lg={3} xl={2}>
+          <Card
+            title="NodeJS"
+            description="V8 Javascript"
+            image={NodeJSLogo}
+            alt="NodeJS"
+            imageTitle="NodeJS"
+            link={"https://nodejs.org/en/"}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} lg={3} xl={2}>
+          <Card
+            title="Elixir"
+            description="Erlang based server"
+            image={ElixirLogo}
+            alt="Elixir"
+            imageTitle="Elixir"
+            link={"https://elixir-lang.org/"}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} lg={3} xl={2}>
+          <Card
+            title="C++ / C"
+            description=""
+            image={CPlusPlusLogo}
+            alt="Cplusplus"
+            imageTitle="Cplusplus"
+            link={"http://www.cplusplus.com/"}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} lg={3} xl={2}>
+          <Card
+            title="GraphQL"
+            description="Schema based data transport"
+            image={GraphQLLogo}
+            alt="GraphQL"
+            imageTitle="GraphQL"
+            link={"https://graphql.org/"}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} lg={3} xl={2}>
+          <Card
+            title="Apollo Server"
+            description="Graphql Node Server"
+            image={ApolloLogo}
+            alt="Apollo Server"
+            imageTitle="Apollo Server"
+            link={"https://www.apollographql.com/docs/apollo-server/"}
+          />
+        </Grid>
+      </Grid>
     </Grid>
   </Grid>
 );
 
-const Devops = ({ classes }) => <Grid container>Devops</Grid>;
+const Devops = ({ classes }) => (
+  <Grid container>
+    <Grid item xs={12} className={classes.frontEndContainer}>
+      <h3 className={classes.frontEnd}>Devops / Automation</h3>
+      <Grid container spacing={32}>
+        <Grid item xs={12} md={6} lg={3} xl={2}>
+          <Card
+            title="Docker"
+            description="Containerization VM"
+            image={DockerLogo}
+            alt="Docker"
+            imageTitle="Docker"
+            link={"https://www.docker.com/"}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} lg={3} xl={2}>
+          <Card
+            title="Kubernetes"
+            description="Container Orchestration"
+            image={KubernetesLogo}
+            alt="Kubernetes"
+            imageTitle="Kubernetes"
+            link={"https://kubernetes.io/"}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} lg={3} xl={2}>
+          <Card
+            title="Cypress"
+            description="E2E Testing Framework"
+            image={CypressLogo}
+            alt="Cypress"
+            imageTitle="Cypress"
+            link={"https://cypress.io"}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} lg={3} xl={2}>
+          <Card
+            title="Jenkins"
+            description="Build / Deploy Pipeline"
+            image={JenkinsLogo}
+            alt="Jenkins"
+            imageTitle="Jenkins"
+            link={"https://jenkins.io/"}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} lg={3} xl={2}>
+          <Card
+            title="CircleCI"
+            description="Build / Deploy Pipeline"
+            image={CircleCILogo}
+            alt="CircleCI"
+            imageTitle="CircleCI"
+            link={"https://circleci.com/"}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} lg={3} xl={2}>
+          <Card
+            title="AWS Platform"
+            description="Amazon Web Services"
+            image={AWSLogo}
+            alt="AWS"
+            imageTitle="AWS"
+            link={"https://amazon.com"}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} lg={3} xl={2}>
+          <Card
+            title="GCP Platform"
+            description="Google Cloud Platform"
+            image={GCPLogo}
+            alt="GCP"
+            imageTitle="GCP"
+            link={"https://cloud.google.com/"}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} lg={3} xl={2}>
+          <Card
+            title="Digital Ocean"
+            description="Cloud Platform"
+            image={DigitalOceanLogo}
+            alt="Digital Ocean"
+            imageTitle="Digital Ocean"
+            link={"https://www.digitalocean.com/"}
+          />
+        </Grid>
+      </Grid>
+    </Grid>
+  </Grid>
+);
+
+const Databases = ({ classes }) => (
+  <Grid container>
+    <Grid item xs={12} className={classes.frontEndContainer}>
+      <h3 className={classes.frontEnd}>Databases</h3>
+      <Grid container spacing={32}>
+        <Grid item xs={12} md={6} lg={3} xl={2}>
+          <Card
+            title="PostgreSQL"
+            description="Interpretation of SQL"
+            image={PostgreSQLLogo}
+            alt="PostgreSQL"
+            imageTitle="PostgreSQL"
+            link={"https://www.postgresql.org/"}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} lg={3} xl={2}>
+          <Card
+            title="SQL"
+            description=""
+            image={MySQLLogo}
+            alt="SQL"
+            imageTitle="SQL"
+            link={"https://www.mysql.com/"}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} lg={3} xl={2}>
+          <Card
+            title="MongoDB"
+            description="NoSQL Database"
+            image={MongoDBLogo}
+            alt="MongoDB"
+            imageTitle="MongoDB"
+            link={"https://www.mongodb.com/"}
+          />
+        </Grid>
+      </Grid>
+    </Grid>
+  </Grid>
+);
 
 const Projects = ({ classes }) => <Grid container>Projects</Grid>;
 
@@ -157,7 +350,7 @@ const Home = ({ classes }) => (
     <Frontend classes={classes} />
     <Backend classes={classes} />
     <Devops classes={classes} />
-    <Projects classes={classes} />
+    <Databases classes={classes} />
   </>
 );
 
