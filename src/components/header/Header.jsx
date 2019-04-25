@@ -10,7 +10,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
-import headerStyle from "./headerStyle";
+import headerStyle from "./HeaderStyle";
 
 class Header extends Component {
   constructor(props) {

@@ -27,6 +27,7 @@ import KubernetesLogo from "../images/kubernetes-logo.svg";
 import MySQLLogo from "../images/sql-logo.png";
 import PostgreSQLLogo from "../images/postgresql-logo.png";
 import MongoDBLogo from "../images/mongodb-logo.jpg";
+
 const styles = {
   root: {
     color: "white",
@@ -62,7 +63,7 @@ const styles = {
 const Frontend = ({ classes }) => (
   <Grid container>
     <Grid item xs={12} className={classes.frontEndContainer}>
-      <h3 className={classes.frontEnd}>Front End technologies</h3>
+      <h3 className={classes.frontEnd}>Front End Technologies</h3>
       <Grid container spacing={32}>
         <Grid item xs={12} md={6} lg={3} xl={2}>
           <Card
@@ -339,7 +340,15 @@ const Databases = ({ classes }) => (
   </Grid>
 );
 
-const Projects = ({ classes }) => <Grid container>Projects</Grid>;
+const Introduction = ({ classes }) => (
+  <>
+    <h3 className={classes.frontEnd}>What am I?</h3>
+    <p>
+      Trying to find a way to live with utmost freedom, to get away from all this on the low, maybe
+      start my own thing, or contribute to something that actually makes a difference?
+    </p>
+  </>
+);
 
 const Home = ({ classes }) => (
   <>
@@ -347,6 +356,7 @@ const Home = ({ classes }) => (
       <h1 className={classes.title}>Karan Kotwal</h1>
       <h2 className={classes.subtitle}>Programmer, entrepeneur, gamer, blogger</h2>
     </Hero>
+    <Introduction classes={classes} />
     <Frontend classes={classes} />
     <Backend classes={classes} />
     <Devops classes={classes} />
